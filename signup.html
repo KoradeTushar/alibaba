@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                
+            header h1{
+                padding:30px;
+                background-color:skyblue;
+            }
+            h3{
+                padding:20px;
+            }
+            button{
+                padding:10px 40px;
+                margin: 10px 20px;
+                
+            }
+            input{
+                padding:10px 20px;
+            }
+            button:hover, .su:hover{
+                color: red;
+            }
+        </style>
+    </head>
+    <body bgcolor="yellow">
+        <form action="signup.jsp" method="post">
+            <center>
+                <header><h1>New Rasigtration</h1></header>
+            <table border="5" cellspacing="10" cellpadding="5">
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname" required="required"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname" required="required"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="add" required="required"></td>
+                </tr>
+                <tr>
+                    <td>Mobile No.</td>
+                    <td><input type="number" name="mob" required="required"></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td><input type="text" name="dob" required="required"></td>
+                </tr>
+                <tr>
+                
+                    <td colspan="2"><center>Date must be in format <b>DD-MON-YYYY</b></center></td>
+                
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>
+                <center>
+                        <select name="country">
+                            <option>--Select--
+                            <option value="india" name="country"/>INDIA
+                            <option value="australiya" name="country"/>AUSTRALIYA
+                            <option value="america" name="country"/>AMERICA
+                            <option value="Germen" name="country"/>GERMEN
+                        </select>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        Male<input type="radio" value="male" name="gender" required="required">
+                        Female<input type="radio" value="female" name="gender" required="required">           
+                    </td>
+                </tr>
+                <tr>
+                    <td>G-Mail</td>
+                    <td><input type="text" name="mail" required="required"></td>
+                </tr>
+                <tr>
+                    <td>User Name</td>
+                    <td><input type="text" name="user" required="required"></td>
+                </tr>
+                <tr>
+                    <td>Passward</td>
+                    <td><input type="text" name="pass" required="required"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>Submit</button><button>Cancel</button></td>
+                </tr>
+            </table>
+                
+            </center>
+        </form>
+    </body>
+</html>
